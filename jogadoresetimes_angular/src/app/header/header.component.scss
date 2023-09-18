@@ -1,0 +1,32 @@
+header {
+  background-color: #190127;
+  padding: 20px;
+  text-align: center;
+  font-size: 24px;
+  margin: 0;
+}
+
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-20px);
+  }
+  60% {
+    transform: translateY(-10px);
+  }
+}
+
+#titulo {
+  font-size: 30px;
+  text-align: center;
+  padding: 20px;
+  color: #ffffff;
+  font-weight: bold;
+  animation: bounce 3s infinite;
+}
