@@ -312,4 +312,4 @@ cd jogadoresetimes_angular
 
 ## Observações finais
 
-Este é um desafio técnico, mas também um projeto de aprendizado. Essa aplicação é minha primeira API Spring Boot e primeira aplicação Angular. Dessa forma, sinta-se a vontade para clonar e testar na sua máquina. Contribuições e sugestões sobre como melhorar são muito bem vindas.
+Esta aplicação é minha primeira API Spring Boot e primeira aplicação Angular; trata-se de um desafio, mas també um projeto de aprendizado. Dessa forma, sinta-se a vontade para clonar e testar na sua máquina. Contribuições e sugestões sobre como melhorar são muito bem vindas.
