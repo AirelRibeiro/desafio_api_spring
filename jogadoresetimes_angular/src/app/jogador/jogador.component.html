@@ -1,0 +1,68 @@
+<div id="primeira_div">
+  <h2>Insira seus jogadores</h2>
+  <div>
+    <input
+      [(ngModel)]="jogador.nome"
+      placeholder="Insira o jogador com nome e sobrenome"
+    />
+    <div>
+      <button
+        (click)="adicionarJogador()"
+        [disabled]="jogador.nome.split(' ').length < 2"
+      >
+        Adicionar Jogador
+      </button>
+      <button (click)="limparJogadores()" [disabled]="jogadores.length <= 0">
+        Excluir Todos os Jogadores
+      </button>
+    </div>
+  </div>
+</div>
+<div id="segunda_div">
+  <div id="div_jogadores">
+    <h2>Jogadores Cadastrados</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Nome</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td *ngIf="jogadores.length > 0">
+            <div *ngFor="let jogador of jogadores">
+              <p>{{ jogador.nome }}</p>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <button (click)="gerarTimes()" [disabled]="jogadores.length <= 0">
+      Gerar Times
+    </button>
+  </div>
+  <div id="div_times">
+    <h2>Tabela de Times</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Time</th>
+          <th>Jogadores</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let time of obterChaves(times)">
+          <td id="nome_time">
+            {{ time }}
+          </td>
+          <td id="nomes_jogadores">
+            <ul *ngFor="let nome of times[time]">
+              <p>{{ nome }}</p>
+            </ul>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

@@ -1,0 +1,172 @@
+* {
+  color: #190127;
+}
+
+#primeira_div,
+#primeira_div div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+}
+
+#primeira_div div div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 50vw;
+  margin: 20px;
+}
+
+#primeira_div h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+#primeira_div div input {
+  padding: 15px;
+  margin-bottom: 10px;
+  text-align: center;
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 18px;
+}
+
+button {
+  padding: 12px 30px;
+  border: none;
+  background-color: #190127;
+  color: #fff;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 5px;
+  display: block;
+  margin: 0 auto;
+  margin-top: 10px;
+
+  &:hover {
+    background-color: #99adbb;
+  }
+}
+
+button[disabled] {
+  background-color: #ccc;
+  color: #888;
+  cursor: not-allowed;
+  border: 1px solid #190127;
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+#segunda_div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  margin: 2vw;
+  margin-top: 20px;
+}
+
+#div_jogadores {
+  margin-right: 1%;
+}
+#div_jogadores,
+#div_times {
+  flex: 1;
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#div_times {
+  margin-right: 0;
+  margin-left: 1%;
+}
+
+#segunda_div h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+#div_jogadores div {
+  background-color: rgb(206, 199, 223);
+  border-radius: 5px;
+}
+
+#div_jogadores_intermediaria {
+  padding-top: 0.5%;
+  padding-bottom: 0.5%;
+  margin-bottom: 2%;
+}
+
+p {
+  font-size: 20px;
+  text-align: center;
+  background-color: rgba(246, 243, 247, 0.123);
+}
+
+/* Estilos para a tabela */
+table {
+  width: 90%;
+  margin: auto;
+  border-collapse: collapse;
+  border-radius: 5px;
+  margin-top: 20px;
+  text-align: center;
+  background-color: rgb(206, 199, 223);
+}
+
+th {
+  background-color: rgba(249, 249, 252, 0.664);
+  font-weight: 900;
+  font-size: x-large;
+  padding: 5px;
+}
+
+td,
+td div {
+  border-bottom: 5px solid rgba(249, 249, 252, 0.664);
+}
+
+#nome_time {
+  font-weight: 900;
+  font-size: large;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+  #primeira_div,
+  #primeira_div div {
+    margin: 10px;
+
+    h2 {
+      font-size: 20px;
+    }
+
+    input {
+      padding: 12px;
+      font-size: 16px;
+    }
+
+    button {
+      padding: 8px;
+      font-size: 12px;
+    }
+  }
+
+  #segunda_div {
+    flex-direction: column;
+    width: 90%;
+    align-items: center;
+    margin: auto;
+  }
+  #segunda_div div {
+    width: 100%;
+  }
+}
