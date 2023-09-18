@@ -2,6 +2,8 @@
 
 Este projeto consiste em uma aplicação desenvolvida usando Angular para o frontend e Spring Boot para o backend. A aplicação permite trabalhar com o cadastro de jogadores e divisão de times a partir dos jogadores cadastrados.
 
+</br>
+
 ## Funcionalidades
 
 Adicionar jogadores
@@ -12,7 +14,7 @@ Excluir todos os jogadores
 
 Gerar times com os jogadores cadastrados
 
-#
+</br>
 
 <details>
   <summary><h2>Estrutura do Backend</h2></summary>
@@ -62,6 +64,8 @@ Status:200 OK
 
 O endpoint POST /jogador recebe um objeto com o nome do jogador. Esse jogador é adicionado à lista de jogadores existente.
 
+</br>
+
 ### 2. GET /jogador
 
 #### Descrição
@@ -86,6 +90,8 @@ Status:200 OK
 
 O endpoint GET /jogador retorna todos os jogadores atualmente armazenados no sistema.
 
+</br>
+
 ### 3. GET /times
 
 #### Descrição
@@ -101,8 +107,8 @@ Um objeto onde as chaves são os nomes dos times e os valores são listas de jog
 
 ```json
 {
-  time: ["Nome Sobrenome", "Nome Sobrenome", "Nome Sobrenome"],
-  time: ["Nome Sobrenome", "Nome Sobrenome", "Nome Sobrenome"],
+  "time": ["Nome Sobrenome", "Nome Sobrenome", "Nome Sobrenome"],
+  "time": ["Nome Sobrenome", "Nome Sobrenome", "Nome Sobrenome"],
   ...
 }
 ```
@@ -110,6 +116,8 @@ Um objeto onde as chaves são os nomes dos times e os valores são listas de jog
 #### Lógica de Negócio
 
 O endpoint GET /times organiza os jogadores em times, seguindo as regras requisitadas. Ele agrupa os jogadores com base na primeira letra do sobrenome e garante que cada time tenha apenas um jogador com o mesmo sobrenome em cada time.
+
+</br>
 
 ### 4. DELETE /jogador/all
 
@@ -136,6 +144,7 @@ O endpoint DELETE /jogador/all remove todos os jogadores armazenados, limpando a
 
 </details>
 
+</br>
 #
 
 ### Estrutura de diretórios:
@@ -173,12 +182,14 @@ src
 
 </details>
 
+</br>
+
 <details>
   <summary><h2>Estrutura do Frontend</h2></summary>
 
 ## Aplicação Web com framework Angular
 
-    ### Configurações necessárias
+  ### Configurações necessárias
 
 - Certifique-se de ter o Node.js e o Angular CLI instalados em sua máquina.
 
@@ -238,6 +249,9 @@ src
 
 </details>
 
+</br>
+
+
 ## Como rodar este projeto na sua máquina
 
 É importante que você siga esta ordem, pois o frontend interage com o backend, de forma que você não poderá usufruir de suas funcionalidades de outra forma.
@@ -294,7 +308,7 @@ cd jogadoresetimes_angular
 
 #### Para acessar o frontend use a url http://localhost:4200.
 
-#
+</br>
 
 ## Observações finais
 
