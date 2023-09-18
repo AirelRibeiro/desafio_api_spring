@@ -3,8 +3,11 @@ package com.airel.jogadoresetimes.repositories;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.springframework.stereotype.Repository;
+
 import com.airel.jogadoresetimes.entities.Jogador;
 
+@Repository
 public class JogadorRepository {
 
   private List<Jogador> jogadores = new ArrayList<>();
