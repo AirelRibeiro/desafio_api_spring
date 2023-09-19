@@ -145,7 +145,7 @@ O endpoint DELETE /jogador/all remove todos os jogadores armazenados, limpando a
 </details>
 
 </br>
-#
+
 
 ### Estrutura de diretórios:
 
