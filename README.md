@@ -31,7 +31,6 @@ Gerar times com os jogadores cadastrados
 
 #### O backend estará disponível em http://localhost:8080.
 
-#
 
 <details>
   <summary><h2>Documentação dos Endpoints</h2></summary>
